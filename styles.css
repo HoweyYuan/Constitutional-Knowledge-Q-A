@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+    color: #333;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+#menu {
+    text-align: center;
+    margin-top: 50px;
+}
+button, #singleOptions .option, #duoOptions .option, #timeOptions .option {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#menu button {
+    font-size: 1.2em;
+    background: #4CAF50;
+    color: #fff;
+}
+#menu button:hover {
+    background: #45a049;
+}
+#singleStats, #duoStats, #timeStats {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+#singleQuestionArea, #duoQuestionArea, #timeQuestionArea {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+#singleQuestion, #duoQuestion, #timeQuestion {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+#singleOptions, #duoOptions, #timeOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#singleOptions button, #duoOptions button, #timeOptions button {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    background: #2196F3;
+    color: #fff;
+}
+#singleOptions button:hover, #duoOptions button:hover, #timeOptions button:hover {
+    background: #1976D2;
+}
+#singleFeedback, #duoFeedback, #timeFeedback {
+    text-align: center;
+    font-size: 1em;
+    margin: 10px;
+    height: 24px;
+}
+#singleNext, #duoNext {
+    display: block;
+    margin: 10px auto;
+    background: #f57c00;
+    color: #fff;
+}
+#singleNext:hover, #duoNext:hover {
+    background: #ef6c00;
+}
+#singleResult, #duoResult, #timeResult {
+    text-align: center;
+    margin-top: 20px;
+}
+#singleAnswerList, #duoAnswerList, #timeAnswerList {
+    text-align: left;
+    max-width: 600px;
+    margin: 10px auto;
+    display: none; /* 初始隐藏，点击查看后显示 */
+}
+#singleAnswerList li, #duoAnswerList li, #timeAnswerList li {
+    margin: 5px 0;
+}
+#singleRestart, #duoRestart, #timeRestart,
+#singleReview, #duoReview, #timeReview {
+    background: #9C27B0;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 10px;
+}
+#singleRestart:hover, #duoRestart:hover, #timeRestart:hover,
+#singleReview:hover, #duoReview:hover, #timeReview:hover {
+    background: #7B1FA2;
+}
+@media (max-width: 600px) {
+    #singleOptions button, #duoOptions button, #timeOptions button {
+        flex: 1 1 100%;
+    }
+}
