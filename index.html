@@ -1,0 +1,96 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宪法知识竞赛</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>宪法知识竞赛</h1>
+    <div id="menu">
+        <p>请选择游戏模式：</p>
+        <button id="btnSingle">单人闯关</button>
+        <button id="btnDuo">双人对战</button>
+        <button id="btnTime">限时挑战</button>
+    </div>
+
+    <div id="singleMode" style="display:none;">
+        <h2>单人闯关模式</h2>
+        <div id="singleStats">得分：0 / 15</div>
+        <div id="singleQuestionArea">
+            <p id="singleQuestion"></p>
+            <div id="singleOptions">
+                <button class="option" data-index="0">A. </button>
+                <button class="option" data-index="1">B. </button>
+                <button class="option" data-index="2">C. </button>
+                <button class="option" data-index="3">D. </button>
+            </div>
+        </div>
+        <div id="singleFeedback"></div>
+        <button id="singleNext" style="display:none;">下一题</button>
+        <div id="singleResult" style="display:none;">
+            <h3>单人模式结束</h3>
+            <p id="singleScore"></p>
+            <button id="singleReview">查看正确答案</button>
+            <ul id="singleAnswerList"></ul>
+            <button id="singleRestart">返回菜单</button>
+        </div>
+    </div>
+
+    <div id="duoMode" style="display:none;">
+        <h2>双人对战模式</h2>
+        <div id="duoStats">
+            <span id="player1Score">玩家1: 0</span> |
+            <span id="player2Score">玩家2: 0</span><br>
+            <span id="duoTurn">当前: 玩家1 回答</span>
+        </div>
+        <div id="duoQuestionArea">
+            <p id="duoQuestion"></p>
+            <div id="duoOptions">
+                <button class="option" data-index="0">A. </button>
+                <button class="option" data-index="1">B. </button>
+                <button class="option" data-index="2">C. </button>
+                <button class="option" data-index="3">D. </button>
+            </div>
+        </div>
+        <div id="duoFeedback"></div>
+        <button id="duoNext" style="display:none;">下一题</button>
+        <div id="duoResult" style="display:none;">
+            <h3>双人模式结束</h3>
+            <p id="duoScore"></p>
+            <button id="duoReview">查看正确答案</button>
+            <ul id="duoAnswerList"></ul>
+            <button id="duoRestart">返回菜单</button>
+        </div>
+    </div>
+
+    <div id="timeMode" style="display:none;">
+        <h2>限时挑战模式</h2>
+        <div id="timeStats">
+            <span id="timeTimer">剩余时间: 60</span> |
+            <span id="timeScore">得分: 0</span>
+        </div>
+        <div id="timeQuestionArea">
+            <p id="timeQuestion"></p>
+            <div id="timeOptions">
+                <button class="option" data-index="0">A. </button>
+                <button class="option" data-index="1">B. </button>
+                <button class="option" data-index="2">C. </button>
+                <button class="option" data-index="3">D. </button>
+            </div>
+        </div>
+        <div id="timeFeedback"></div>
+        <div id="timeResult" style="display:none;">
+            <h3>限时模式结束</h3>
+            <p id="timeScoreResult"></p>
+            <button id="timeReview">查看正确答案</button>
+            <ul id="timeAnswerList"></ul>
+            <button id="timeRestart">返回菜单</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
